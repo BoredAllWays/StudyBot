@@ -1,0 +1,90 @@
+{
+    "math": [
+        {
+            "Term": "Radians",
+            "Definition": "Represent the number of times the radius goes around the circle"
+        },
+        {
+            "Term": "radians to degrees",
+            "Definition": "angle * 180/pi"
+        },
+        {
+            "Term": "Degrees to Radians",
+            "Definition": "angle * pi/180"
+        },
+        {
+            "Term": "Circle Area",
+            "Definition": "A=\u03c0r^2"
+        },
+        {
+            "Term": "Circumference",
+            "Definition": "C = 2\u03c0r or C = d\u03c0"
+        }
+    ],
+    "ela": [
+        {
+            "Term": "Perspective",
+            "Definition": "Perspective is a narrator's interpretations of events, people, and places based on his or her own personal experiences and background. The narrator's dialogue with the reader reflects these aspects, and may present opinions or different ideas than other characters in the story"
+        },
+        {
+            "Term": "1st person",
+            "Definition": "A first-person narrative is a mode of storytelling or a peripheral narrator in which a storyteller recounts events from their own point of view using the first person i.e. 'I' or 'we' etc."
+        },
+        {
+            "Term": "2nd person",
+            "Definition": "Second person point of view uses the pronoun 'you' to address the reader. This narrative voice implies that the reader is either the protagonist or a character in the story and the events are happening to them"
+        },
+        {
+            "Term": "3rd person",
+            "Definition": "In third-person point of view, the author is narrating a story about the characters, referring to them by name, or using the third-person pronouns 'he,' 'she,' and 'they.' "
+        },
+        {
+            "Term": "3rd person limited",
+            "Definition": "Third person limited differs from omniscient third person because the narrator is an active participant. Although the pronouns may be the same as in omniscient POV, the narrator only knows what a single person or group (the viewpoint narrator or current narrator) knows."
+        },
+        {
+            "Term": "3rd person omniscient",
+            "Definition": "THIRD-PERSON OMNISCIENT NARRATION: This is a common form of third-person narration in which the teller of the tale, who often appears to speak with the voice of the author himself, assumes an omniscient (all-knowing) perspective on the story being told"
+        }
+    ],
+    "bio": [
+        {
+            "Term": "Natural Selection",
+            "Definition": "the process whereby organisms better adapted to their environment tend to survive and produce more offspring. The theory of its action was first fully expounded by Charles Darwin and is now believed to be the main process that brings about evolution."
+        },
+        {
+            "Term": "4 principles of natural selection",
+            "Definition": "Variation, Overproduction, Adaptation, descent with modification"
+        },
+        {
+            "Term": "Genetic Bottleneck",
+            "Definition": "\u2022    Sometimes, a disaster, such as a disease, can kill many individuals in a population.\n\u2022    Just by chance, the smaller, leftover population\u2019s gene pool can be different from the original population\u2019s.\n\u2022    The bottleneck effect is a change in gene frequency following a dramatic reduction of a population\u2019s size.\n\u2022    The bottleneck effect usually results in a population with reduced genetic diversity.\n"
+        },
+        {
+            "Term": "The Founder Effect",
+            "Definition": "\u2022Genetic drift can also occur when only a few individuals colonize a brand new habitat.\n\u2022    These founding individuals may carry alleles that differ than those from the main population that they came from.\n\u2022    The new gene pool therefore stars out with different frequencies and grows in size.\n\u2022    When a small group of founding individuals colonize a new location, reduced genetic diversity usually occurs."
+        }
+    ],
+    "history": [
+        {
+            "Term": "Manifest Destiny (1803-1853)",
+            "Definition": "A belief shared by many Americans in the mid 1800s that the United States should expand across the continent to the Pacific Ocean"
+        },
+        {
+            "Term": "Mountain Men",
+            "Definition": "Mountain Men were explorers and fur trappers who lived in the Rocky mts Opened up trails to the west (Great Plains, Rocky\u2019s, Pacific Ocean"
+        },
+        {
+            "Term": "Rendevous",
+            "Definition": "A meeting arranged at a specific spot at a specific time"
+        },
+        {
+            "Term": "Santa Fe Trail",
+            "Definition": "Trail from Missouri to Santa Fe, New Mexico. All the pathways to the west started in Missouri"
+        },
+        {
+            "Term": "Oregon Trail",
+            "Definition": "From Independence, MO, to Oregon Terr. (about 2,000 mi) Wheat grew, sunshine, fat pigs"
+        }
+    ]
+}
