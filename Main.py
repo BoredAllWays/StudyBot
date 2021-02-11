@@ -1,4 +1,7 @@
-import discord; from discord.ext import commands; import os; import json
+import discord
+from discord.ext import commands
+import os
+import json
 bot = commands.Bot(command_prefix="[]")
 
 if __name__ == "__main__":

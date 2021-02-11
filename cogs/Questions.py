@@ -5,7 +5,7 @@ import asyncio
 questions = {
     "What is the area of a circle with a diameter of 16?\n (a)8pi\n (b)16pi\n (c)64pi\n (d)128pi\n (e)256pi\n": 'b',
     "In a 30-60-90 triangle, the length of the hypotenuse is 6. What is the length of the shortest side?\n (a)2\n (b)3\n (c)12\n (d)4\n": 'b'
-    }
+}
 
 isused = False
 

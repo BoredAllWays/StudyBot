@@ -23,25 +23,27 @@ class StudyCommands(commands.Cog):
                 'common lit': 'https://clever.com/oauth/instant-login?client_id=4af59222fbe57cc6ab9d&district_id=527bac1858c5a34a0c0000d0',
                 'myhrw': 'https://my.hrw.com/sp/access?sp=hrw&connection=FL-DCPSD-00188779',
                 'khan academy': 'https://www.khanacademy.org/ela'
-                },
+            },
             'math': {
                 'algebra nation': 'https://clever.com/oauth/instant-login?client_id=7271c1bc6f814e08724&district_id=527bac1858c5a34a0c0000d0',
                 'delta math': 'https://www.deltamath.com/',
                 'Geometry Practice': 'https://www.studyguidezone.com/geometry-help.htm'
 
-                },
+            },
             'biology': {
                 'penda': 'https://clever.com/oauth/instant-login?client_id=6a4a79f457ee2bf81ea3&district_id=527bac1858c5a34a0c0000d0',
                 'brain pop': 'https://clever.com/oauth/instant-login?client_id=8bf685529a555fe6bb2e&district_id=527bac1858c5a34a0c0000d0',
                 'wtamu.edu': 'https://wtamu.edu/~cbaird/sq/category/biology/'
-                }
             }
+        }
 
-        embedVar = discord.Embed(title=f"{arg} resources", description="Click links", color=0x00ff00)
+        embedVar = discord.Embed(
+            title=f"{arg} resources", description="Click links", color=0x00ff00)
         if arg not in studysubjects:
             return
         for i in studysubjects[arg]:
-            embedVar.add_field(name=i, value=studysubjects[arg][i], inline=False)
+            embedVar.add_field(
+                name=i, value=studysubjects[arg][i], inline=False)
         await ctx.send(embed=embedVar)
 
     @commands.command(help="<Give the command with a subject and you'll get the links>")
@@ -59,19 +61,19 @@ class StudyCommands(commands.Cog):
                 'ELA TPT': 'https://teachingelawithjoy.com/',
                 'Big Source': 'https://www.savvas.com/index.cfm?locator=PS2rBh&cmpid=7010W000002LAn1QAG&utm_source=Google&utm_medium=cpc&utm_campaign=7010W000002LAn1QAG&utm_content=myPerspectives&gclid=Cj0KCQiApY6BBhCsARIsAOI_GjY5JSD_s_r_2BjphESJ_2pnvQx76BsB6S1b42ko56JFWnhEXvCnI8IaAmdyEALw_wcB',
                 'Poetry': 'https://www.poetryfoundation.org/'
-                },
+            },
             'math': {
                 'algebra nation': 'https://clever.com/oauth/instant-login?client_id=7271c1bc6f814e08724&district_id=527bac1858c5a34a0c0000d0',
                 'delta math': 'https://www.deltamath.com/',
                 'Geometry Practice': 'https://www.studyguidezone.com/geometry-help.htm',
                 'Geometry course free': 'https://www.mathplanet.com/education/geometry',
                 'khan academy-geometry': 'https://www.khanacademy.org/math/geometry',
-                'geogbra' : 'https://www.geogebra.org/',
+                'geogbra': 'https://www.geogebra.org/',
                 'VirtualNerd': 'https://www.virtualnerd.com/middle-math/geometry-measurement/rectangle-perimeter-area/rectangle-perimeter-example',
-                'Formula CheetSheet':'http://www.moomoomath.com/Geometry-Formulas.html',
+                'Formula CheetSheet': 'http://www.moomoomath.com/Geometry-Formulas.html',
                 'Georgia Geometry': 'http://toolbox2.s3-website-us-west-2.amazonaws.com/accnt_42975/site_42976/Documents/Harrisonanalytgeomstudy070115.pdf',
                 'Geometry Worksheets': 'http://www.letspracticegeometry.com/free-geometry-worksheets/'
-                },
+            },
             'bio': {
                 'penda': 'https://clever.com/oauth/instant-login?client_id=6a4a79f457ee2bf81ea3&district_id=527bac1858c5a34a0c0000d0',
                 'brain pop': 'https://clever.com/oauth/instant-login?client_id=8bf685529a555fe6bb2e&district_id=527bac1858c5a34a0c0000d0',
@@ -83,15 +85,17 @@ class StudyCommands(commands.Cog):
                 'Nova Labs': 'https://www.pbs.org/wgbh/nova/labs/',
                 'Bio Links and Facts': 'https://nabt.org/Resource-Links-General-Biology',
                 'Khan Academy-Bio': 'https://www.khanacademy.org/science/biology'
-                }
             }
+        }
 
-        embedVar = discord.Embed(title=f"{arg} resources", description="Click links", color=0x00ff00)
+        embedVar = discord.Embed(
+            title=f"{arg} resources", description="Click links", color=0x00ff00)
         if arg not in studysubjects:
             await ctx.send("<NoParameterInDictionaryException: Please enter ela, bio, or math>")
             return
         for i in studysubjects[arg]:
-            embedVar.add_field(name=i, value=studysubjects[arg][i], inline=False)
+            embedVar.add_field(
+                name=i, value=studysubjects[arg][i], inline=False)
         await ctx.send(embed=embedVar)
 
     @study.error
@@ -149,10 +153,13 @@ class StudyCommands(commands.Cog):
     async def check(self, ctx, subject):
         subject = subject.lower()
         if subject == 'ela' or subject == 'math' or subject == 'bio' or subject == 'history':
-            embedvar = discord.Embed(title=f"{subject} terms", description="Check out these terms and remember to study them", color=discord.Color.blue())
+            embedvar = discord.Embed(
+                title=f"{subject} terms", description="Check out these terms and remember to study them", color=discord.Color.blue())
             with open("ClassNotes.json") as data:
                 data = json.load(data)
-                for i in data[subject]: embedvar.add_field(name=i['Term'], value=i['Definition'], inline=False)
+                for i in data[subject]:
+                    embedvar.add_field(
+                        name=i['Term'], value=i['Definition'], inline=False)
                 await ctx.send(f"Fetching the terms for {subject}")
                 await asyncio.sleep(2)
                 await ctx.send(embed=embedvar)
