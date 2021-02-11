@@ -22,18 +22,38 @@ class StudyCommands(commands.Cog):
             'ela': {
                 'common lit': 'https://clever.com/oauth/instant-login?client_id=4af59222fbe57cc6ab9d&district_id=527bac1858c5a34a0c0000d0',
                 'myhrw': 'https://my.hrw.com/sp/access?sp=hrw&connection=FL-DCPSD-00188779',
-                'khan academy': 'https://www.khanacademy.org/ela'
+                'khan academy-ela': 'https://www.khanacademy.org/ela',
+                'MasterClass': 'https://www.masterclass.com/articles/third-person-omniscient-narration-guide',
+                'Common Sense': 'https://www.commonsense.org/education/website/826-digital',
+                'ELA+Lit youtube playlist': 'https://www.youtube.com/playlist?list=PL8dPuuaLjXtOeEc9ME62zTfqc0h6Pe8vb',
+                'Utah Resources': 'https://www.uen.org/7-12interactives/lang_arts.shtml',
+                'ELA TPT': 'https://teachingelawithjoy.com/',
+                'Big Source': 'https://www.savvas.com/index.cfm?locator=PS2rBh&cmpid=7010W000002LAn1QAG&utm_source=Google&utm_medium=cpc&utm_campaign=7010W000002LAn1QAG&utm_content=myPerspectives&gclid=Cj0KCQiApY6BBhCsARIsAOI_GjY5JSD_s_r_2BjphESJ_2pnvQx76BsB6S1b42ko56JFWnhEXvCnI8IaAmdyEALw_wcB',
+                'Poetry': 'https://www.poetryfoundation.org/'
             },
             'math': {
                 'algebra nation': 'https://clever.com/oauth/instant-login?client_id=7271c1bc6f814e08724&district_id=527bac1858c5a34a0c0000d0',
                 'delta math': 'https://www.deltamath.com/',
-                'Geometry Practice': 'https://www.studyguidezone.com/geometry-help.htm'
-
+                'Geometry Practice': 'https://www.studyguidezone.com/geometry-help.htm',
+                'Geometry course free': 'https://www.mathplanet.com/education/geometry',
+                'khan academy-geometry': 'https://www.khanacademy.org/math/geometry',
+                'geogbra': 'https://www.geogebra.org/',
+                'VirtualNerd': 'https://www.virtualnerd.com/middle-math/geometry-measurement/rectangle-perimeter-area/rectangle-perimeter-example',
+                'Formula CheetSheet': 'http://www.moomoomath.com/Geometry-Formulas.html',
+                'Georgia Geometry': 'http://toolbox2.s3-website-us-west-2.amazonaws.com/accnt_42975/site_42976/Documents/Harrisonanalytgeomstudy070115.pdf',
+                'Geometry Worksheets': 'http://www.letspracticegeometry.com/free-geometry-worksheets/'
             },
-            'biology': {
+            'bio': {
                 'penda': 'https://clever.com/oauth/instant-login?client_id=6a4a79f457ee2bf81ea3&district_id=527bac1858c5a34a0c0000d0',
                 'brain pop': 'https://clever.com/oauth/instant-login?client_id=8bf685529a555fe6bb2e&district_id=527bac1858c5a34a0c0000d0',
-                'wtamu.edu': 'https://wtamu.edu/~cbaird/sq/category/biology/'
+                'wtamu.edu': 'https://wtamu.edu/~cbaird/sq/category/biology/',
+                'bio interactive': 'https://www.biointeractive.org/',
+                'BioJunction': 'http://www.biologyjunction.com/',
+                'Bio Corner': 'https://www.biologycorner.com/',
+                'Virtual Urchin': 'https://depts.washington.edu/vurchin/?view=main',
+                'Nova Labs': 'https://www.pbs.org/wgbh/nova/labs/',
+                'Bio Links and Facts': 'https://nabt.org/Resource-Links-General-Biology',
+                'Khan Academy-Bio': 'https://www.khanacademy.org/science/biology'
             }
         }
 
