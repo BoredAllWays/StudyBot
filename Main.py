@@ -10,7 +10,7 @@ if __name__ == "__main__":
             bot.load_extension(f"cogs.{i[:-3]}")
             print(str(i) + ' is ready')
 
-    with open('C:/Users/prana/PycharmProjects/StudyBot/SecretStuff.json') as f:
+    with open('./SecretStuff.json') as f:
         data = json.load(f)
 
     TOKEN = data['BOT TOKEN']
