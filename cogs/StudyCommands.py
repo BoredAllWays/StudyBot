@@ -6,8 +6,8 @@ import json
 
 
 def write_json(data, filename="ClassNotes.json"):
-    with open(filename, 'w') as f:
-        json.dump(data, f, indent=4)
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=4)
 
 
 class StudyCommands(commands.Cog):
@@ -136,7 +136,7 @@ class StudyCommands(commands.Cog):
                 'pay atention in class', 'ask questions', 'review notes', 'check resources with !s subject']
         await ctx.send(random.choice(tips))
 
-    @commands.command(help="Set a time to take breaks")
+    @commands.command(help="<Set a time to take breaks before you do an assignment>")
     async def timer(self, ctx, arg, studyafter):
         arg = int(arg)
         arg = arg * 60
@@ -146,16 +146,22 @@ class StudyCommands(commands.Cog):
             await ctx.send(f"Your break is over {ctx.author.mention}, time to study some {studyafter}")
 
     @commands.command(help="<please use []add [Ela/Math/Bio/History]['Term']['definition']>")
-    async def add(self, ctx, classes, term, define):
+    async def add(self, ctx, classes, category, term, define):
         classes = classes.lower()
         if classes == 'ela' or classes == 'math' or classes == 'bio' or classes == 'history':
             with open("ClassNotes.json", "r") as json_stuff:
                 data1 = json.load(json_stuff)
                 temp = data1[classes]
                 stuff = {"Term": term, "Definition": define}
-                temp.append(stuff)
+                for i in range(0, len(temp)):
+                    if category in [*temp][i]:
+                        temp1 = temp[i][category]
+                        temp1.append(stuff)
+                    else:
+                        await ctx.send("Category not found")
+                        return
             write_json(data1)
-            await ctx.send(f"{classes} term is added!")
+            await ctx.send(f"{category} term is added!")
         else:
             await ctx.send("<NoSpecifiedClassException: please use [Ela/Math/Bio/History][Term][definition]>")
 
@@ -169,20 +175,43 @@ class StudyCommands(commands.Cog):
             else:
                 await ctx.send("<NoParameterException: please make sure you have used 3 parameters for this command>")
 
-    @commands.command(help="Check your study terms for a class")
-    async def check(self, ctx, subject):
+    @commands.command(help="<Check your study terms for a class>")
+    async def check(self, ctx, subject, cat):
         subject = subject.lower()
         if subject == 'ela' or subject == 'math' or subject == 'bio' or subject == 'history':
             embedvar = discord.Embed(
                 title=f"{subject} terms", description="Check out these terms and remember to study them", color=discord.Color.blue())
             with open("ClassNotes.json") as data:
                 data = json.load(data)
-                for i in data[subject]:
-                    embedvar.add_field(
-                        name=i['Term'], value=i['Definition'], inline=False)
+                temp = data[subject]
+                for i in range(len(temp)):
+                    if cat in temp[i].keys():
+                        temp1 = data[subject][i][cat]
+                        for x in range(0, len(temp1)):
+                            temp2 = temp1[x]
+                            embedvar.add_field(name=temp2['Term'], value=temp2["Definition"], inline = False)
+                    else:
+                        await ctx.send("<Bad Category>")
+                        return
                 await ctx.send(f"Fetching the terms for {subject}")
-                await asyncio.sleep(2)
                 await ctx.send(embed=embedvar)
+        else:
+            await ctx.send("<NoSpecifiedClassException: please use [Ela/Math/Bio/History][Term][definition]>")
+
+    @commands.command(help="<Owner Only Command>")
+    async def addsubject(self, ctx, classes, category):
+        classes = classes.lower()
+        if ctx.message.author.id != 493414999218192386:
+            await ctx.send("<NoPermissionError: You are not allowed to user this command>")
+            return
+        with open("ClassNotes.json") as data:
+            data1 = json.load(data)
+            temp = data1[classes]
+            categorydictionary = {}
+            categorydictionary[category] = []
+            temp.append(categorydictionary)
+        write_json(data1)
+        await ctx.send(f"Category {category} is added for {classes}")
 
 
 def setup(bot): bot.add_cog(StudyCommands(bot))
