@@ -212,6 +212,15 @@ class StudyCommands(commands.Cog):
             temp.append(categorydictionary)
         write_json(data1)
         await ctx.send(f"Category {category} is added for {classes}")
+    @commands.command()
+    async def categories(self, ctx, classes):
+        with open("ClassNotes.json") as data:
+            data = json.load(data)
+            temp = data[classes]
+            embedvar = discord.Embed(
+                title=f"{classes} categories", description="Categories for stuff", color=discord.Color.blue())
+            for i in range(len(data[classes])):
+                embedvar.add_field(name = [*temp][i], value = [*temp][i], inline = False)
 
-
+            await ctx.send(embed=embedvar)
 def setup(bot): bot.add_cog(StudyCommands(bot))
