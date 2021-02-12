@@ -29,13 +29,17 @@
                 {
                     "Term": "Arc Length Formula",
                     "Definition": "AL or s = 2\u03c0r(\u03b8/360\u00b0)"
+                },
+                {
+                    "Term": "Diameter",
+                    "Definition": "A line that cuts through exactly half of the circle."
                 }
             ]
         }
     ],
     "ela": [
         {
-            "Perspective":[
+            "Perspective": [
                 {
                     "Term": "Perspective",
                     "Definition": "Perspective is a narrator's interpretations of events, people, and places based on his or her own personal experiences and background. The narrator's dialogue with the reader reflects these aspects, and may present opinions or different ideas than other characters in the story"
@@ -65,7 +69,7 @@
     ],
     "bio": [
         {
-            "natural selection" : [
+            "natural selection": [
                 {
                     "Term": "Natural Selection",
                     "Definition": "the process whereby organisms better adapted to their environment tend to survive and produce more offspring. The theory of its action was first fully expounded by Charles Darwin and is now believed to be the main process that brings about evolution."
@@ -84,11 +88,10 @@
                 }
             ]
         }
-
     ],
     "history": [
         {
-            "Manifest Destiny" : [
+            "Manifest Destiny": [
                 {
                     "Term": "Manifest Destiny (1803-1853)",
                     "Definition": "A belief shared by many Americans in the mid 1800s that the United States should expand across the continent to the Pacific Ocean"
@@ -109,8 +112,18 @@
                     "Term": "Oregon Trail",
                     "Definition": "From Independence, MO, to Oregon Terr. (about 2,000 mi) Wheat grew, sunshine, fat pigs"
                 }
-
             ]
+        },
+        {
+            "Thomas Jefferson": [
+                {
+                    "Term": "TJ",
+                    "Definition": "Thomas Jefferson served as the third President of the United States from 1801 to 1809. Among other things, he was the principal author of the Declaration of Independence, facilitated the Louisiana Purchase which nearly doubled the size of America, abolished the slave trade and founded the University of Virginia. He was a Democratic-Republican and lowered the National Debt significantly."
+                }
+            ]
+        },
+        {
+            "aryan": []
         }
     ]
 }

@@ -145,8 +145,13 @@ class StudyCommands(commands.Cog):
             await asyncio.sleep(arg)
             await ctx.send(f"Your break is over {ctx.author.mention}, time to study some {studyafter}")
 
-    @commands.command(help="<please use []add [Ela/Math/Bio/History]['Term']['definition']>")
-    async def add(self, ctx, classes, category, term, define):
+    @commands.command(help="<please use []add [Ela/Math/Bio/History], [category], ['Term'], ['definition']>")
+    async def add(self, ctx, *, args):
+        if args.count(', ') != 3:
+            await ctx.send("<Not enough commas in your argument>")
+            return
+        args = args.split(', ')
+        classes, category, term, define = args[0], args[1], args[2], args[3]
         classes = classes.lower()
         if classes == 'ela' or classes == 'math' or classes == 'bio' or classes == 'history':
             with open("ClassNotes.json", "r") as json_stuff:
@@ -157,26 +162,20 @@ class StudyCommands(commands.Cog):
                     if category in [*temp][i]:
                         temp1 = temp[i][category]
                         temp1.append(stuff)
-                    else:
-                        await ctx.send("Category not found")
-                        return
             write_json(data1)
             await ctx.send(f"{category} term is added!")
         else:
-            await ctx.send("<NoSpecifiedClassException: please use [Ela/Math/Bio/History][Term][definition]>")
+            await ctx.send("<NoSpecifiedClassException: please use [Ela/Math/Bio/History], [category], [Term], [definition]>")
 
-    @add.error
-    async def studyhandler(self, ctx, error):
-        if isinstance(error, commands.MissingRequiredArgument):
-            if error.param.name == 'classes':
-                await ctx.send("<NoParameterException: please make sure you have used 3 parameters for this command>")
-            elif error.param.name == 'term':
-                await ctx.send("<NoParameterException: please make sure you have used 3 parameters for this command>")
-            else:
-                await ctx.send("<NoParameterException: please make sure you have used 3 parameters for this command>")
 
     @commands.command(help="<Check your study terms for a class>")
-    async def check(self, ctx, subject, cat):
+    async def check(self, ctx, *, args):
+        if args.count(', ') != 1:
+            await ctx.send('Comma Error')
+            return
+
+        args = args.split(', ')
+        subject, cat = args[0], args[1]
         subject = subject.lower()
         if subject == 'ela' or subject == 'math' or subject == 'bio' or subject == 'history':
             embedvar = discord.Embed(
@@ -190,16 +189,17 @@ class StudyCommands(commands.Cog):
                         for x in range(0, len(temp1)):
                             temp2 = temp1[x]
                             embedvar.add_field(name=temp2['Term'], value=temp2["Definition"], inline = False)
-                    else:
-                        await ctx.send("<Bad Category>")
-                        return
                 await ctx.send(f"Fetching the terms for {subject}")
                 await ctx.send(embed=embedvar)
         else:
-            await ctx.send("<NoSpecifiedClassException: please use [Ela/Math/Bio/History][Term][definition]>")
+            await ctx.send("<NoSpecifiedClassException: please use [Ela/Math/Bio/History], [category], [Term], [definition]>")
 
     @commands.command(help="<Owner Only Command>")
-    async def addsubject(self, ctx, classes, category):
+    async def addsubject(self, ctx, *, args):
+        if args.count(', ') != 1:
+            await ctx.send("<Comma Error>")
+        args.split(', ')
+        classes, category = args[0], args[1]
         classes = classes.lower()
         if ctx.message.author.id != 493414999218192386:
             await ctx.send("<NoPermissionError: You are not allowed to user this command>")
@@ -212,15 +212,18 @@ class StudyCommands(commands.Cog):
             temp.append(categorydictionary)
         write_json(data1)
         await ctx.send(f"Category {category} is added for {classes}")
+
     @commands.command()
     async def categories(self, ctx, classes):
+        score = 0
         with open("ClassNotes.json") as data:
             data = json.load(data)
             temp = data[classes]
             embedvar = discord.Embed(
                 title=f"{classes} categories", description="Categories for stuff", color=discord.Color.blue())
             for i in range(len(data[classes])):
-                embedvar.add_field(name = [*temp][i], value = [*temp][i], inline = False)
-
+                score+=1
+                embedvar.add_field(name = f"Category {score}", value = ''.join(temp[i].keys()), inline = False)
             await ctx.send(embed=embedvar)
+            
 def setup(bot): bot.add_cog(StudyCommands(bot))
