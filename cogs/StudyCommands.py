@@ -198,7 +198,7 @@ class StudyCommands(commands.Cog):
     async def addsubject(self, ctx, *, args):
         if args.count(', ') != 1:
             await ctx.send("<Comma Error>")
-        args.split(', ')
+        args = args.split(', ')
         classes, category = args[0], args[1]
         classes = classes.lower()
         if ctx.message.author.id != 493414999218192386:
