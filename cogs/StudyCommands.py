@@ -147,7 +147,7 @@ class StudyCommands(commands.Cog):
 
     @commands.command(help="<please use []add [Ela/Math/Bio/History], [category], ['Term'], ['definition']>")
     async def add(self, ctx, *, args):
-        if args.count(', ') != 3:
+        if args.count(', ') < 3:
             await ctx.send("<Not enough commas in your argument>")
             return
         args = args.split(', ')

@@ -37,7 +37,24 @@
             ]
         },
         {
-            "Quadrilaterals": []
+            "Quadrilaterals": [
+                {
+                    "Term": "Quadrilateral",
+                    "Definition": "A quadrilateral is a polygon in Euclidean plane geometry with four edges and four vertices. Other names for quadrilateral include: quadrangle - tetragon and 4-gon."
+                },
+                {
+                    "Term": "Types of Quadrilaterals",
+                    "Definition": "\nRectangle. Opposite sides are parallel and equal.\nSquare. Opposite sides are parallel and all sides are equal. \nParallelogram. Opposite sides are parallel and equal.\nRhombus. All sides are equal and opposite sides are parallel. \nTrapezium.\nKite."
+                },
+                {
+                    "Term": "Parallelogram",
+                    "Definition": "\nOpposite Sides: Parallel and \u2245\nAdjacent Sides: Not always \u2245 and never Parallel \nAngles: Opposite angles \u2245 and adjacent angles Supplementary\nDiagonals: Bisect Each-other"
+                },
+                {
+                    "Term": "Rhombus",
+                    "Definition": "\nOpposite Sides: | | and \u2245\nAdjacent Sides: \u2245\nAngles: Opposite angles \u2245 and adjacent angles Supplementary\nDiagonals: Bisect each-other and \u22a5"
+                }
+            ]
         }
     ],
     "ela": [
