@@ -5,7 +5,7 @@ import asyncio
 import json
 
 
-def write_json(data, filename="ClassNotes.json"):
+def write_json(data, filename="C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json"):
     with open(filename, 'w') as file:
         json.dump(data, file, indent=4)
 
@@ -154,7 +154,7 @@ class StudyCommands(commands.Cog):
         classes, category, term, define = args[0], args[1], args[2], args[3]
         classes = classes.lower()
         if classes == 'ela' or classes == 'math' or classes == 'bio' or classes == 'history':
-            with open("ClassNotes.json", "r") as json_stuff:
+            with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json", "r") as json_stuff:
                 data1 = json.load(json_stuff)
                 temp = data1[classes]
                 stuff = {"Term": term, "Definition": define}
@@ -180,7 +180,7 @@ class StudyCommands(commands.Cog):
         if subject == 'ela' or subject == 'math' or subject == 'bio' or subject == 'history':
             embedvar = discord.Embed(
                 title=f"{subject} terms", description="Check out these terms and remember to study them", color=discord.Color.blue())
-            with open("ClassNotes.json") as data:
+            with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
                 data = json.load(data)
                 temp = data[subject]
                 for i in range(len(temp)):
@@ -201,10 +201,7 @@ class StudyCommands(commands.Cog):
         args = args.split(', ')
         classes, category = args[0], args[1]
         classes = classes.lower()
-        if ctx.message.author.id != 493414999218192386:
-            await ctx.send("<NoPermissionError: You are not allowed to user this command>")
-            return
-        with open("ClassNotes.json") as data:
+        with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
             data1 = json.load(data)
             temp = data1[classes]
             categorydictionary = {}
@@ -216,7 +213,7 @@ class StudyCommands(commands.Cog):
     @commands.command()
     async def categories(self, ctx, classes):
         score = 0
-        with open("ClassNotes.json") as data:
+        with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
             data = json.load(data)
             temp = data[classes]
             embedvar = discord.Embed(

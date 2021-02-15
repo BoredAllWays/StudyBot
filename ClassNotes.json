@@ -48,13 +48,212 @@
                 },
                 {
                     "Term": "Parallelogram",
-                    "Definition": "\nOpposite Sides: Parallel and \u2245\nAdjacent Sides: Not always \u2245 and never Parallel \nAngles: Opposite angles \u2245 and adjacent angles Supplementary\nDiagonals: Bisect Each-other"
+                    "Definition": "\nOpposite Sides: Parallel and \u2245\nAdjacent Sides: Not always \u2245 and never Parallel \nAngles: Opposite angles \u2245 and adjacent angles Supplementary\nDiagonals: Bisect Each-other\n Area: b * h"
                 },
                 {
                     "Term": "Rhombus",
-                    "Definition": "\nOpposite Sides: | | and \u2245\nAdjacent Sides: \u2245\nAngles: Opposite angles \u2245 and adjacent angles Supplementary\nDiagonals: Bisect each-other and \u22a5"
+                    "Definition": "\nOpposite Sides: | | and \u2245\nAdjacent Sides: \u2245\nAngles: Opposite angles \u2245 and adjacent angles Supplementary\nDiagonals: Bisect each-other and \u22a5\n Area: b * h or 1/2(d1 * d2)"
+                },
+                {
+                    "Term": "Square",
+                    "Definition": "\nOpposite Sides: | | and \u2245\nAdjacent Sides: \u2245\nAngles: All 90\u00b0 and \u2245\nDiagonals: Bisect each-other and  \u22a5 and  \u2245\n Area: b*h or lw or s^2 s=sides"
+                },
+                {
+                    "Term": "Rectangle",
+                    "Definition": "\nOpposite Sides: | | and \u2245\nAdjacent Sides: Different if not a square\nAngles: All 90\u00b0 and \u2245\nDiagonals: Bisect each-other and  \u2245\nA square can be a rectangle but a rectangle can not be a square.\n Area: l * w or b * h"
+                },
+                {
+                    "Term": "Isosceles Trapezoids",
+                    "Definition": "\nOpposite Sides: 1 set | | and 1 set  \u2245\nAdjacent Sides: Different\nAngles: Base \u2220's are \u2245\nDiagonals:  \u2245\nArea: (b1+b2)/2 * h"
+                },
+                {
+                    "Term": "Kite",
+                    "Definition": "\nOpposite Sides: Different\nAdjacent Sides: 2 pairs of consecutive \u2245 sides\nAngles: 1 pair of opposite angles are \u2245\nDiagonals: \u22a5\nArea: 1/2(d1*d2)"
+                },
+                {
+                    "Term": "Extra Site",
+                    "Definition": " Click here for images of the quadrilaterals <https://www.mathsisfun.com/quadrilaterals.html>"
                 }
             ]
+        },
+        {
+            "Special Signs": [
+                {
+                    "Term": "Signs",
+                    "Definition": "\nCongruent --> \u2245\nParallel --> | |\nDegrees --> number\u00b0\nPerpendicular -->  \u22a5 \nAngle --> m\u2220ABC the m stands for measurement. \nSine --> Sin\nCosine --> Cos\nTangent --> Tan\nTriangle --> \u0394\nSimilar --> ~\nPi --> \u03c0\nRounds to --> \u2248\nInequalities --> \u2264 or \u2265 or < or >\nMultiply --> \u22c5\nExponent --> a^b \nPercent --> % \n for more sites click this <https://www.rapidtables.com/math/symbols/Geometry_Symbols.html>"
+                }
+            ]
+        },
+        {
+            "right triangles and trigonometry": []
+        },
+        {
+            "Angles": [
+                {
+                    "Term": "adjacent angles",
+                    "Definition": "Adjacent angles are connected and share a ray in between them."
+                },
+                {
+                    "Term": "Linear pair",
+                    "Definition": "adjacent angles that add up to 180\u00b0."
+                },
+                {
+                    "Term": "Vertical angle",
+                    "Definition": "Opposite angles that are equal to each other which is called Vertical Angles."
+                },
+                {
+                    "Term": "Angle bisector",
+                    "Definition": "A ray that cuts an angle in half making to equal parts."
+                },
+                {
+                    "Term": "Alternate interior",
+                    "Definition": "angles between 2 lines and on opposite sides of a transversal"
+                },
+                {
+                    "Term": "Alternate exterior",
+                    "Definition": "Angles that lie outside a pair of lines and on opposite sides of a transversal."
+                },
+                {
+                    "Term": "Corresponding angles",
+                    "Definition": "Lie on the same side of the transversal and in corresponding positions"
+                },
+                {
+                    "Term": "Consecutive Interior Angles",
+                    "Definition": "Angles that are on the same side inside the lines"
+                },
+                {
+                    "Term": "consecutive exterior",
+                    "Definition": "exterior angles that lie on the same side of the transversal."
+                },
+                {
+                    "Term": "Transitive Property",
+                    "Definition": "If a=b and b=c"
+                },
+                {
+                    "Term": " Reflexive Property",
+                    "Definition": "A quantity is congruent (equal) to itself. a = a"
+                },
+                {
+                    "Term": "Substitution Property",
+                    "Definition": "if a=b then a can be substituted for b in any equation."
+                },
+                {
+                    "Term": "Circumcenter",
+                    "Definition": "the point that is equidistant from each vertex."
+                },
+                {
+                    "Term": "regular polygon",
+                    "Definition": "All congruent sides and angles."
+                },
+                {
+                    "Term": "Incircle",
+                    "Definition": "Connects all of the midpoints of the inside of a regular polygon."
+                },
+                {
+                    "Term": "Radius of a polygon",
+                    "Definition": "distance from the center to any vertex"
+                },
+                {
+                    "Term": "Apothem",
+                    "Definition": "The distance from center to the median of the side of the regular polygon."
+                },
+                {
+                    "Term": "Circumcircle",
+                    "Definition": "Connects the vertices of a regular polygon."
+                },
+                {
+                    "Term": "Irregular polygon",
+                    "Definition": "No congruent sides and angles."
+                }
+            ]
+        },
+        {
+            "Basics of Geometry": [
+                {
+                    "Term": "Geometry",
+                    "Definition": "Geometry literally means Earth Measurement"
+                },
+                {
+                    "Term": "Line",
+                    "Definition": "A line is a straight path that continues in both\ndirections forever. Lines are one-dimensional."
+                },
+                {
+                    "Term": "Plane",
+                    "Definition": "A plane is a flat, two-dimensional object. It has no thickness and extends forever."
+                },
+                {
+                    "Term": "Line Segment",
+                    "Definition": "A line segment is a portion of a line located between two points."
+                },
+                {
+                    "Term": "Ray",
+                    "Definition": "A ray is piece of a line that starts at one point and extends infinitely in one direction."
+                },
+                {
+                    "Term": "Angle",
+                    "Definition": "An angle is formed by two rays with the same endpoint"
+                },
+                {
+                    "Term": "Vertex",
+                    "Definition": "The point where the rays meet is called the vertex."
+                },
+                {
+                    "Term": "Parallel Lines",
+                    "Definition": "Parallel lines are two lines on the same plane that do not intersect."
+                },
+                {
+                    "Term": "Perpendicular Lines",
+                    "Definition": "Perpendicular lines are two intersecting lines that form a 90\u00b0 angle."
+                },
+                {
+                    "Term": "Segment Addition Postulate",
+                    "Definition": "If three points A, B, C are collinear and B is between A and C, then AB+BC = AC"
+                },
+                {
+                    "Term": "Postulate",
+                    "Definition": "A postulate is a statement that we take to be automatically true. We do not need to prove that a postulate is true because it is something we assume to be true."
+                },
+                {
+                    "Term": "Midpoint Formula",
+                    "Definition": "(x1+x2/2, y1+y2/2)"
+                },
+                {
+                    "Term": "Ratio",
+                    "Definition": "A ratio compares two numbers. A 1:1 ratio is stated as, or can also be written as 1 to 1"
+                },
+                {
+                    "Term": "Partitioning a Line Segment Formula",
+                    "Definition": " x1 + a/a+b(x2-x1); y1 + a/a+b(y2-y1)"
+                },
+                {
+                    "Term": "Distance Formula",
+                    "Definition": "d = \u221a(x_2 - x_1)^2 + (y_2-y_1)^2"
+                },
+                {
+                    "Term": "Perpendicular Bisector Theorem",
+                    "Definition": "If a point is on the perpendicular bisector of a segment. Then it is equidistant from the endpoints of the segment. The converse of this theorem is also true."
+                },
+                {
+                    "Term": "Bisector",
+                    "Definition": "A bisector divides lines"
+                },
+                {
+                    "Term": "segment bisector",
+                    "Definition": "A segment bisector is a line segment or ray that passes\nthrough another segment and cuts it into two congruent parts."
+                }
+            ]
+        },
+        {
+            "Rigid Transformations and Symmetry": []
+        },
+        {
+            "Non-Rigid Transformations and Congruence and Similarity": []
+        },
+        {
+            "Triangles": []
+        },
+        {
+            "Triangles part 2": []
         }
     ],
     "ela": [
