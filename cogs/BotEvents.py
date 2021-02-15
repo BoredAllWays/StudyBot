@@ -15,6 +15,7 @@ class BotEvents(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(f"{self.bot.user} is online")
+        await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name="AniistheGOAT procrastinate"))
 
     @commands.Cog.listener()
     async def on_message(self, message):
