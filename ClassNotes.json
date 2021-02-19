@@ -33,6 +33,10 @@
                 {
                     "Term": "Diameter",
                     "Definition": "A line that cuts through exactly half of the circle."
+                },
+                {
+                    "Term": "inscribed angle",
+                    "Definition": "1/2 of central angle"
                 }
             ]
         },
@@ -240,11 +244,20 @@
                 {
                     "Term": "segment bisector",
                     "Definition": "A segment bisector is a line segment or ray that passes\nthrough another segment and cuts it into two congruent parts."
+                },
+                {
+                    "Term": "slope inercept form",
+                    "Definition": "(y-y1)=m(x-x1)\nor\ny=mx+b"
                 }
             ]
         },
         {
-            "Rigid Transformations and Symmetry": []
+            "Rigid Transformations and Symmetry": [
+                {
+                    "Term": "Rigid Transformation",
+                    "Definition": "In mathematics a rigid transformation (also called Euclidean transformation or Euclidean isometry) is a geometric transformation of a Euclidean space that preserves the Euclidean distance between every pair of points."
+                }
+            ]
         },
         {
             "Non-Rigid Transformations and Congruence and Similarity": []
@@ -254,6 +267,18 @@
         },
         {
             "Triangles part 2": []
+        },
+        {
+            "calculus": [
+                {
+                    "Term": "Logarithms",
+                    "Definition": "like an exponent but in reverse; link to image that explains https://discord.com/channels/751532195893739558/752861930435379295/811426223401205791"
+                },
+                {
+                    "Term": "Basic derivations",
+                    "Definition": "Derivatives of powers: (d/dx)x^a=ax^(a-1)"
+                }
+            ]
         }
     ],
     "ela": [
@@ -320,7 +345,7 @@
                     "Definition": "Mountain Men were explorers and fur trappers who lived in the Rocky mts Opened up trails to the west (Great Plains, Rocky\u2019s, Pacific Ocean"
                 },
                 {
-                    "Term": "Rendevous",
+                    "Term": "Rendezvous",
                     "Definition": "A meeting arranged at a specific spot at a specific time"
                 },
                 {
@@ -330,6 +355,34 @@
                 {
                     "Term": "Oregon Trail",
                     "Definition": "From Independence, MO, to Oregon Terr. (about 2,000 mi) Wheat grew, sunshine, fat pigs"
+                },
+                {
+                    "Term": "Mountain Men Travels",
+                    "Definition": "Mnt men moved a lot between the east and the west.  Most of them took up Native wives. Mulatto: Mixed with White and Black Mestizo: Mixed with Spanish and Native American Zambo: Mixed with Black and Spanish Some times called sambo."
+                },
+                {
+                    "Term": "Texas Statehood",
+                    "Definition": "Santa Anna was captured and forced to sign a treaty giving Texas its independence. Texas became an independent nation in 1836 called the Lone Star Republic. Sam Houston became President. Annexation of Texas was delayed: Worry that adding Texas as a slave state would upset the balance between free and slave states Fear that annexing Texas would lead to war with Mexico Texas joined the U.S. and became the 28th state in 1845."
+                },
+                {
+                    "Term": "Oregon Country",
+                    "Definition": "In 1820: both the U.S. and Britain claimed to own Oregon Country. In the 1830s and 1840s: thousands of American pioneers were going west to settle in Oregon Country. President Polk wanted all of Oregon to the fifty-four forty parallel. The American people cried: \u201cFifty-four forty or fight.\u201d Neither Polk nor Britain wanted war. Britain and the U.S. compromised. They split Oregon in half at the 49th parallel. The U.S. got the southern half."
+                },
+                {
+                    "Term": "War with Mexico",
+                    "Definition": "1846-48 President Polk wanted to expand the U.S. territory clear to the Pacific Ocean.  He offered to buy California and New Mexico territories from Mexico for $30 million. Mexico refused.  After the U.S. annexed Texas in 1845: Mexico and the U.S. disagreed on the Texas border The U.S. claimed the Rio Grande River. Mexico claimed the Nueces River.  The U.S. sent troops to patrol the border.  Conflict broke out and the Mexican army killed U.S. troops on \u201cdisputed land.\u201d  Polk declared war: claiming Mexico spilled American blood on American land."
+                },
+                {
+                    "Term": "Mexican Cession: 1848",
+                    "Definition": "In the Treaty of Guadalupe Hidalgo: Mexico gave the U.S. the territories of California and Nevada and Utah. most of Arizona and New Mexico: and parts of Colorado and Wyoming. The US also claimed Texas north of the Rio Grande Treaty guaranteed civil and political protection of Mexican citizens in the territory  The U.S. paid $15 million for the territory  Today this is the American southwest.  Mexican Cession increased the size of the US by 25%"
+                },
+                {
+                    "Term": "California Gold Rush: 1849",
+                    "Definition": "Gold was found in Sutter's Mill in 1848.  In 1849: about 80,000 gold seekers, known as forty-niners, came to California hoping to strike it rich.  Panning for gold was the simplest method. A miner fills a pan with dirt. He then puts the pan under water and shakes it until any gold settles on the bottom. Mining camps sprung up whenever enough people gathered to look for gold. At the mining camps, many people prospected (searched for gold). Others ran businesses that catered to the miners - laundry, food, innkeepers, legal services, supplies"
+                },
+                {
+                    "Term": "Impact of Gold Rush",
+                    "Definition": "The arrival of 49ers created a population boom  Immigration increased diversity of population  California became a state in 1 year  Growth of new businesses and industry transformed California\u2019s economy Gold mining was important"
                 }
             ]
         },

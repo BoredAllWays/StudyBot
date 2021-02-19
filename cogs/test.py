@@ -17,5 +17,9 @@ class test(commands.Cog):
             }
         }
         await ctx.send(a[str(v1)][str(v2)][str(v3)])
+    @commands.command()
+    async def cb(self, ctx):
+        await ctx.send("https://paste.myst.rs/\n")
+        await ctx.send("Use that to send code blocks or do ` ` ` code ` ` `")
 
 def setup(bot): bot.add_cog(test(bot))

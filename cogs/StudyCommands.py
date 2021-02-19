@@ -147,7 +147,7 @@ class StudyCommands(commands.Cog):
 
     @commands.command(help="<please use []add [Ela/Math/Bio/History], [category], ['Term'], ['definition']>")
     async def add(self, ctx, *, args):
-        if args.count(', ') < 3:
+        if args.count(', ') != 3:
             await ctx.send("<Not enough commas in your argument>")
             return
         args = args.split(', ')
@@ -212,15 +212,15 @@ class StudyCommands(commands.Cog):
 
     @commands.command()
     async def categories(self, ctx, classes):
-        score = 0
+        catname = 0
         with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
             data = json.load(data)
             temp = data[classes]
             embedvar = discord.Embed(
                 title=f"{classes} categories", description="Categories for stuff", color=discord.Color.blue())
             for i in range(len(data[classes])):
-                score+=1
-                embedvar.add_field(name = f"Category {score}", value = ''.join(temp[i].keys()), inline = False)
+                catname+=1
+                embedvar.add_field(name = f"Category {catname}", value = ''.join(temp[i].keys()), inline = False)
             await ctx.send(embed=embedvar)
             
 def setup(bot): bot.add_cog(StudyCommands(bot))
