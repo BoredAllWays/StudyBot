@@ -5,7 +5,7 @@ import asyncio
 import json
 
 
-def write_json(data, filename="C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json"):
+def write_json(data, filename="./ClassNotes.json"):
     with open(filename, 'w') as file:
         json.dump(data, file, indent=4)
 
@@ -212,8 +212,13 @@ class StudyCommands(commands.Cog):
 
     @commands.command()
     async def categories(self, ctx, classes):
+<<<<<<< HEAD
         catname = 0
         with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
+=======
+        score = 0
+        with open("./ClassNotes.json") as data:
+>>>>>>> ba1559c1f3fdba3b32d8b22e7c37b8849ec0f969
             data = json.load(data)
             temp = data[classes]
             embedvar = discord.Embed(
