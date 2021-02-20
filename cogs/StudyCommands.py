@@ -154,7 +154,7 @@ class StudyCommands(commands.Cog):
         classes, category, term, define = args[0], args[1], args[2], args[3]
         classes = classes.lower()
         if classes == 'ela' or classes == 'math' or classes == 'bio' or classes == 'history':
-            with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json", "r") as json_stuff:
+            with open("./ClassNotes.json", "r") as json_stuff:
                 data1 = json.load(json_stuff)
                 temp = data1[classes]
                 stuff = {"Term": term, "Definition": define}
@@ -180,7 +180,7 @@ class StudyCommands(commands.Cog):
         if subject == 'ela' or subject == 'math' or subject == 'bio' or subject == 'history':
             embedvar = discord.Embed(
                 title=f"{subject} terms", description="Check out these terms and remember to study them", color=discord.Color.blue())
-            with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
+            with open("./ClassNotes.json") as data:
                 data = json.load(data)
                 temp = data[subject]
                 for i in range(len(temp)):
@@ -201,7 +201,7 @@ class StudyCommands(commands.Cog):
         args = args.split(', ')
         classes, category = args[0], args[1]
         classes = classes.lower()
-        with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
+        with open("./ClassNotes.json") as data:
             data1 = json.load(data)
             temp = data1[classes]
             categorydictionary = {}
@@ -212,13 +212,8 @@ class StudyCommands(commands.Cog):
 
     @commands.command()
     async def categories(self, ctx, classes):
-<<<<<<< HEAD
         catname = 0
-        with open("C:/Users/prana/PycharmProjects/StudyBot/ClassNotes.json") as data:
-=======
-        score = 0
         with open("./ClassNotes.json") as data:
->>>>>>> ba1559c1f3fdba3b32d8b22e7c37b8849ec0f969
             data = json.load(data)
             temp = data[classes]
             embedvar = discord.Embed(
