@@ -8,12 +8,12 @@ intents.guilds = True
 bot = commands.Bot(command_prefix="[]", intents = intents)
 
 if __name__ == "__main__":
-    for i in os.listdir("C:/Users/prana/PycharmProjects/StudyBot/cogs"):
+    for i in os.listdir("./cogs"):
         if i.endswith(".py"):
             bot.load_extension(f"cogs.{i[:-3]}")
             print(str(i) + ' is ready')
 
-    with open('C:/Users/prana/PycharmProjects/StudyBot/SecretStuff.json') as f:
+    with open('./SecretStuff.json') as f:
         data = json.load(f)
 
     TOKEN = data['BOT TOKEN']
